@@ -96,22 +96,12 @@ var app = {
             pushNotification.register(this.successHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
         } 
 
-        get(success, failure);
-
-        var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
-        deviceInfo.get(function(result) {
-                console.log("result = " + result);
-                 alert("Device plugin ok = " + result);
-            }, function() {
-                console.log("error");
-                 alert("Device plugin error = " + result);
-            });
-
+         
     },
     // result contains any message sent from the plugin call
     successHandler: function(result) {
         //var mail =  window.GoogleAuth.getMailIds();
-        alert('Hi Mail :' + result);
+         
         userHandler.appid = result;
         userHandler.mailid = result;
 
@@ -122,7 +112,7 @@ var app = {
        //alert('Connected to Server! ID:'+result);
     },
     errorHandler:function(error) {
-        //alert(error);
+        alert(error);
         //alert('Error connecting to Server!'+error);
 
     },
