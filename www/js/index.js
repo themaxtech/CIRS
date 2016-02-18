@@ -34,8 +34,7 @@ var arung4 = '';
 var arung5 = '';
 var arung6 = '';
 var arung7 = ''; 
-var arung111 = ''; 
-var arung112 = ''; 
+var arung111 = '';  
  
 
  var userHandler = {
@@ -46,8 +45,7 @@ var arung112 = '';
     useroriname : arung6,
     status      : arung2,
     appid       : arung7,
-    gcmid       : arung111,
-    mailid       : arung112
+    gcmid       : arung111 
     
 }
 
@@ -102,11 +100,9 @@ var app = {
     successHandler: function(result) {
         //var mail =  window.GoogleAuth.getMailIds();
          
-        userHandler.appid = result;
-        userHandler.mailid = result;
+        userHandler.appid = result; 
 
-        $.jStorage.set("appid", userHandler.appid);
-        $.jStorage.set("mailid", userHandler.mailid);
+        $.jStorage.set("appid", userHandler.appid); 
         
         //alert('Callback Success! Result = '+result); 
        //alert('Connected to Server! ID:'+result);
