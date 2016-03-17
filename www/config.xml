@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.maxtech.cirs" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CIRS Coimbatore</name>
+<widget id="com.themaxtech.anuvratvidhyalaya" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Anuvrat Vidhyalaya</name>
     <description>
-      Welcome to CIRS
+      Welcome to Anuvrat Vidhyalaya
     </description>
     <author email="maxtechapps@gmail.com" href="http://themaxtech.com">
         ARUN G
